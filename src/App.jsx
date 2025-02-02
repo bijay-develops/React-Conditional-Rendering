@@ -7,10 +7,17 @@ function App() {
   return (
     <div className="App">
         <h1>Conditional Rendering</h1>
-        <IfElseStatements />
+        <p>Click the button to see the conditional rendering in action!</p>
 
-        <h1>Ternary Operator</h1>
-        <TernaryOperator />
+        <div className="">
+          <h2>If-Else Statements</h2>
+          <IfElseStatements />
+        </div>
+
+        <div className="">
+          <h2>Ternary Operator</h2>
+          <TernaryOperator />
+        </div>
     </div>
   );
 }
