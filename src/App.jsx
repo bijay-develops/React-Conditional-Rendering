@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import IfElseStatements from './components/IfElseStatements';
 import TernaryOperator from './components/TernaryOperator';
+import LogicalAndOperator from './components/LogicalAndOperator';
 
 function App() {
   return (
@@ -17,6 +18,11 @@ function App() {
         <div className="">
           <h2>Ternary Operator</h2>
           <TernaryOperator />
+        </div>
+
+        <div className="">
+          <h2>Logical AND Operator</h2>
+          <LogicalAndOperator />
         </div>
     </div>
   );
