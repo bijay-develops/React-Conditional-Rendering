@@ -1,3 +1,5 @@
+<hr>
+
 ## Using If/Else Statements
 - This method works well when the condition is more complex.
 
@@ -16,6 +18,8 @@
     style D fill:#ffcdd2,stroke:#e53935,color:#b71c1c
     style E fill:#d1c4e9,stroke:#673ab7,color:#311b92
 ```
+<br>
+<hr>
 
 ## Using Ternary Operator 
 - It’s often used when the logic is simple and there are only two options to render.
