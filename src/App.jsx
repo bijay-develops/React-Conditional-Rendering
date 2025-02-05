@@ -3,6 +3,7 @@ import './App.css';
 import IfElseStatements from './components/IfElseStatements';
 import TernaryOperator from './components/TernaryOperator';
 import LogicalAndOperator from './components/LogicalAndOperator';
+import SwitchCaseStatements from './components/SwitchCaseStatements';
 
 function App() {
   return (
@@ -23,6 +24,11 @@ function App() {
         <div className="">
           <h2>Logical AND Operator</h2>
           <LogicalAndOperator />
+        </div>
+
+        <div className=""> 
+          <h2>Switch Case Statements</h2>
+          <SwitchCaseStatements />
         </div>
     </div>
   );
