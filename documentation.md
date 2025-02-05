@@ -67,3 +67,32 @@ graph TD
     style D fill:#c8e6c9,stroke:#43a047,color:#1b5e20
     style F fill:#ede7f6,stroke:#673ab7,color:#311b92
 ```
+
+
+## Using switch case statements
+- Switch case statements are useful when you need to handle multiple conditions, which would otherwise require multiple if conditions.
+- This approach can be more readable if there are many conditions to check.
+
+
+```mermaid
+
+stateDiagram-v2
+    [*] --> Guest
+    Guest --> User: Login click
+    User --> Admin: Yes click
+    
+    state Guest {
+        state "Login Button" as guest_ui
+    }
+    
+    state User {
+        state "Welcome Message" as user_msg
+        state "Admin Check" as admin_check
+    }
+    
+    state Admin {
+        state "Dashboard" as dashboard
+    }
+
+
+```

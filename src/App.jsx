@@ -4,9 +4,32 @@ import IfElseStatements from './components/IfElseStatements';
 import TernaryOperator from './components/TernaryOperator';
 import LogicalAndOperator from './components/LogicalAndOperator';
 import SwitchCaseStatements from './components/SwitchCaseStatements';
+import DisplayingUserProfileBasedOnAuthentication from './components/Practical use cases/DisplayingUserProfileBasedOnAuthentication';
 
 function App() {
+  const [Practical, setPractical] = useState(false);
+  
+  const PracticalUseCaseButtonHandler = () => {
+    setPractical(true);
+  } 
+
   return (
+    <>
+    { 
+      <>
+        <h1>For Practical use cases</h1>
+        <p>We will demonstrate these in practical scenarios:</p>
+        
+        {
+          Practical ? (
+            <DisplayingUserProfileBasedOnAuthentication />
+          ) : (
+            <button className='' onClick={() => setPractical(true)}>Displaying User Profile Based on Authentication</button>
+          )
+        }
+        
+      </>
+    }
     <div className="App">
         <h1>Conditional Rendering</h1>
         <p>Click the button to see the conditional rendering in action!</p>
@@ -31,6 +54,7 @@ function App() {
           <SwitchCaseStatements />
         </div>
     </div>
+  </>
   );
 }
 
